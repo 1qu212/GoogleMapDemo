@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height_min"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab0"
+            style="@style/Tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/marker"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/tab1"
+            style="@style/Tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/polyline"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/tab2"
+            style="@style/Tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/map"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

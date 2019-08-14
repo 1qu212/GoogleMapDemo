@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MyMapDemo</string>
+    <string name="title_activity_maps">GoogleMap</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">需要ACCESS_FINE_LOCATION权限开启定位功能</string>
+    <string name="location_permission_denied">该功能需要ACCESS_FINE_LOCATION权限。如果该权限已被永久拒绝，则可以从系统设置中启用该权限。</string>
+    <string name="permission_required_toast">该功能需要定位权限</string>
+    <string name="map_not_ready">地图还没有准备好</string>
+    <string name="marker">点</string>
+    <string name="polyline">线</string>
+    <string name="map">地图</string>
+    <string name="point_name">点号</string>
+    <string name="latitude">纬度</string>
+    <string name="longitude">经度</string>
+    <string name="altitude">海拔</string>
+    <string name="load">载入</string>
+    <string name="mark">标记</string>
+    <string name="remove">移除</string>
+    <string name="clear">清空</string>
+    <string name="save">保存</string>
+    <string name="line_name">线号</string>
+    <string name="line_new">新建线段</string>
+    <string name="line_draw">开始画线</string>
+    <string name="line_point">选点连线</string>
+    <string name="selected_point">已选点号</string>
+</resources>
