@@ -80,6 +80,7 @@ public abstract class PermissionUtils {
         private static final String PERMISSONREQUESTMESSAGE = "permissonRequestMessage";
         private static final String PERMISSIONREQUESTTOAST = "permissonRequestToast";
         private boolean mFinishActivity = false;
+        private boolean showToast = true;
         private String permissonRequestMessage;
         private String permissonRequestToast;
         private int requestCode;
@@ -122,6 +123,7 @@ public abstract class PermissionUtils {
                             ActivityCompat.requestPermissions(getActivity(), new String[]{permisson}, requestCode);
                             // Do not finish the Activity while requesting permission.
                             mFinishActivity = false;
+                            showToast = false;
                         }
                     })
                     .setNegativeButton(android.R.string.cancel, null)
@@ -131,7 +133,9 @@ public abstract class PermissionUtils {
         @Override
         public void onDismiss(DialogInterface dialog) {
             super.onDismiss(dialog);
-            Toast.makeText(getActivity(), permissonRequestToast, Toast.LENGTH_SHORT).show();
+            if (showToast) {
+                Toast.makeText(getActivity(), permissonRequestToast, Toast.LENGTH_SHORT).show();
+            }
             if (mFinishActivity) {
                 getActivity().finish();
             }
